@@ -1,0 +1,132 @@
+body {
+    font-family: 'Catamaran', sans-serif;
+    background-image: url("../images/sky.jpg");
+  }
+  
+  #headerBar {
+    text-align: center;
+    font-size: 50px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 15px red;
+    font-weight: bold;
+  }
+  
+  #bodyContentContainer {
+    width: 980px;
+    margin: 0 auto;
+  }
+  
+  #buttonContainer {
+    background-color: red;
+    padding: 15px;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+  }
+  
+  .instructions {
+    margin-bottom: 7px;
+  }
+  
+  .searchButton {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 3px;
+    padding: 2px 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .searchButton:hover {
+    box-shadow: 0 0 8px red;
+  
+  }
+  
+  .ratingIcon {
+    height: 15px;
+  }
+  
+  .container {
+    width:100%;
+    border-bottom:1px solid #d3d3d3;
+    margin-bottom: 2%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .container div {
+    width:100%;
+  }
+  
+  .container .header {
+    background-color: red;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #666666;
+  }
+  
+  .container .content {
+    display: none;
+    padding : 10px;
+    background-color: blue;
+  }
+  .gifTitle {
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 1% 0;
+  }
+  
+  .gifContainer {
+    float: left;
+    width: 46%;
+    padding: 1%;
+    border-radius: 3px;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    height: 260px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .gif{
+    clear: both;
+    max-width: 80%;
+    margin: 1% 0;
+    border-radius: 5px;
+    height: 60%;
+    border: 1px solid #666666;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .downloadImage {
+    display: inline;
+  }
+  
+  /*=================================Media Queries=====================================*/
+  
+  @media only screen and (max-width: 980px) {
+  
+    #bodyContentContainer {
+      width: 960px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+  
+    #bodyContentContainer {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 640px) {
+  
+    #header {
+      display: block;
+    }
+    .gifContainer {
+      width: 96%;
+    }
+  }

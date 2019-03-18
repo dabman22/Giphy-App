@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--META TAGS-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!--TITLE INFO-->
+  <title>My Giphy App</title>
+
+  <!--SCRIPT FILE LINKAGE-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+  <!--STYLESHEET LINKAGE-->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header id="headerBar">
+  <h1>Giphy App</h1>
+</header>
+
+<div class="container">
+  <div class="header">
+    <p>Click to <span id="expandCollapse">Show</span> Search Bar</p>
+  </div>
+  <div class="content">
+    <form id="addItemForm">
+      <label for="addItemText">search button:</label>
+      <br>
+      <input type="text" id="addItemText">
+      <button id="addItemButton">Add Item</button>
+    </form>
+    <br>
+    <button id="clearAddedItems">Clear Added Items</button>
+    <br>
+    <br>
+    <label for="queryRecordCount">Number of gifs per click:</label>
+    <br>
+    <select id= "queryRecordCount" name="queryRecordCount">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10" selected="selected">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+    </select>
+  </div>
+</div>
+
+<div id="bodyContentContainer">
+  <div id="buttonContainer">
+    <p class="instructions">Click a button to generate gifs:</p>
+  </div>
+
+  <div id="gifOutput"></div>
+
+</div>
+
+</body>
+
+</html>
